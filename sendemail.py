@@ -6,9 +6,9 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.base import MIMEBase
 from email import encoders
 
-email_user = #KINDLEBOT EMAIL ID
-email_password = #KINDLEBOT PASSWORD
-email_send = #REGISTERED KINDLE EMAIL ID
+email_user = dets.readline()
+email_password = dets.readline()
+email_send = dets.readline()
 
 subject = 'Your new E-book'
 msg = MIMEMultipart()

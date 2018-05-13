@@ -1,8 +1,13 @@
 import imaplib
 import email
 import processor
-PASSWORD = #KINDLEBOT PASSWORD
-EMAIL_ACCOUNT = #KINDLEBOT EMAIL ID
+
+dets = open('details.txt','r')
+
+EMAIL_ACCOUNT = dets.readline()
+PASSWORD = dets.readline()
+SEND_EMAIL = dets.readline()
+
 M = imaplib.IMAP4_SSL('imap.gmail.com')
 try:
     rv, data = M.login(EMAIL_ACCOUNT, PASSWORD)
